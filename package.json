@@ -1,0 +1,33 @@
+{
+  "name": "houseremote2.0",
+  "version": "2.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "ENV=development gulp",
+    "it": "node built/server/startup/startup.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-istanbul": "^1.1.0",
+    "gulp-mocha": "^3.0.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-tslint": "^6.0.2",
+    "gulp-typescript": "^2.13.6",
+    "remap-istanbul": "^0.6.4",
+    "run-sequence": "^1.2.2",
+    "tslint": "^3.14.0",
+    "typescript": "^1.8.10"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "dotenv": "^2.0.0",
+    "express": "^4.14.0",
+    "winston": "^2.2.0"
+  }
+}
