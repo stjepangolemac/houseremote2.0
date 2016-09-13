@@ -70,6 +70,33 @@ export interface IResponse {
   message: string;
   success: boolean;
 }
+
+/**
+ * Device manager (Arduino | OrangePi)
+ */
+export interface IScheduler {
+  settings: ISettings;
+  logger: ILogger;
+  cache: ITimerCache;
+  time: number;
+  loop: () => void;
+  start: () => void;
+  control: IControl;
+}
+
+export interface ITimerCache {
+  dailyTimers: IDailyTimer[];
+  periodicTimers: IPeriodicTimer[];
+  dailyTimerRepository: IRepository;
+  periodicTimerRepository: IRepository;
+  refresh: () => void;
+}
+
+export interface IControl {
+  write: (value: boolean, pin: number, delay?: number) => Promise<any>;
+  read: (pin: number) => Promise<any>;
+}
+
 /**
  * Mongoose model interfaces
  */
