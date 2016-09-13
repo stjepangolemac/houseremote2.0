@@ -1,0 +1,5 @@
+{
+  "description":"True if left garage is open, false if it is not",
+  "name":"left garage",
+  "pin":"32"
+}

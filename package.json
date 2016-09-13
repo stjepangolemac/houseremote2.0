@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "gulp": "ENV=development gulp",
+    "test": "gulp",
     "it": "node built/server/startup/startup.js"
   },
   "author": "",
@@ -27,7 +26,10 @@
   "dependencies": {
     "body-parser": "^1.15.2",
     "dotenv": "^2.0.0",
+    "es6-promise": "^3.2.1",
     "express": "^4.14.0",
+    "mongodb": "^2.2.9",
+    "mongoose": "^4.5.10",
     "winston": "^2.2.0"
   }
 }
