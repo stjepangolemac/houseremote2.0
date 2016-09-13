@@ -2,3 +2,5 @@ node_modules/
 private/
 .env
 .vscode/
+errors.log
+npm-debug.log
